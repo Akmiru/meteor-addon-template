@@ -1,15 +1,14 @@
 package com.example.addon.hud;
 
 import com.example.addon.Addon;
-import meteordevelopment.meteorclient.systems.hud.HudElement;
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 
-public class HudExample extends HudElement {
-    public static final HudElementInfo<HudExample> INFO = new HudElementInfo<>(Addon.HUD_GROUP, "example", "HUD element example.", HudExample::new);
+public class HudElement extends meteordevelopment.meteorclient.systems.hud.HudElement {
+    public static final HudElementInfo<HudElement> INFO = new HudElementInfo<>(Addon.HUD_GROUP, "example", "HUD element example.", HudElement::new);
 
-    public HudExample() {
+    public HudElement() {
         super(INFO);
     }
 

@@ -5,10 +5,10 @@
   "name": "Addon Template",
   "description": "An addon template for the Meteor addons.",
   "authors": [
-    "seasnail"
+    "Lipur, Mewok129"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": ""
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
