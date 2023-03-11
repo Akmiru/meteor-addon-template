@@ -6,7 +6,7 @@ import meteordevelopment.meteorclient.systems.hud.HudRenderer;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 
 public class HudElement extends meteordevelopment.meteorclient.systems.hud.HudElement {
-    public static final HudElementInfo<HudElement> INFO = new HudElementInfo<>(Addon.HUD_GROUP, "example", "HUD element example.", HudElement::new);
+    public static final HudElementInfo<HudElement> INFO = new HudElementInfo<>(Addon.HUD_GROUP, "First", "HUD element example.", HudElement::new);
 
     public HudElement() {
         super(INFO);
