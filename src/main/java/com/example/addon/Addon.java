@@ -3,6 +3,7 @@ package com.example.addon;
 import com.example.addon.commands.CommandExample;
 import com.example.addon.hud.HudElement;
 import com.example.addon.modules.ModuleExample;
+import com.example.addon.modules.NoFallPlus;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.commands.Commands;
@@ -14,15 +15,16 @@ import org.slf4j.Logger;
 
 public class Addon extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
+    public static final Category CATEGORY = new Category("Bddon");
     public static final HudGroup HUD_GROUP = new HudGroup("Example");
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Meteor Addon Template");
+        LOG.info("Initializing Meteor Bddon");
 
         // Modules
         Modules.get().add(new ModuleExample());
+        Modules.get().add(new NoFallPlus());
 
         // Commands
         Commands.get().add(new CommandExample());
